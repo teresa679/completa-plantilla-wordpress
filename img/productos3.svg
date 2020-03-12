@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="30px" height="40px" viewBox="0 0 30 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 60 (88103) - https://sketch.com -->
+    <title>Group 3</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="0 8.69565217e-05 29.9351304 8.69565217e-05 29.9351304 39.9133913 0 39.9133913"></polygon>
+    </defs>
+    <g id="Diseño-Escritorio" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Home" transform="translate(-840.000000, -1898.000000)">
+            <g id="Group-3" transform="translate(840.000000, 1898.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Clip-2"></g>
+                <path d="M14.9673043,34.924 C10.5629565,34.924 7.48382609,31.884 7.48382609,27.534 C7.48382609,26.4813913 7.84252174,22.7396522 14.9673043,14.967913 C22.0925217,22.7396522 22.4512174,26.4813913 22.4512174,27.534 C22.4512174,31.884 19.372087,34.924 14.9673043,34.924 M14.9673043,8.69565217e-05 C6.21295652,7.89704348 -8.69565217e-05,17.220087 -8.69565217e-05,23.4257391 C-8.69565217e-05,33.1309565 6.1586087,39.9135652 14.9673043,39.9135652 C23.7764348,39.9135652 29.9351304,33.1309565 29.9351304,23.4257391 C29.9351304,17.1974783 23.6829565,7.86573913 14.9673043,8.69565217e-05" id="Fill-1" fill="#FFFFFF" mask="url(#mask-2)"></path>
+            </g>
+        </g>
+    </g>
+</svg>

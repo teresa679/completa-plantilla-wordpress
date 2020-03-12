@@ -15,7 +15,7 @@
 		<!--Declara quien es el autor. Sin utilidad práctica -->
 		<meta name="author" content="Pixelmouse">
 		<!-- Declara la descripción de la web. Es utilizado por los motores de busqueda para la previa -->
-		<meta name="description" content="Descripcion de tu web">
+		<meta name="description" content="<?php bloginfo( 'description' ); ?>">
 		<!-- Open Graph y Twitter card: Declara como se mostrará la previa del enlace si es compartida por Facebook o alguna otra red social -->
 		<meta property="og:image" content="<?php bloginfo( 'template_url' ); ?>/img/miniatura.png">
 		<meta property="og:title" content="The Rock">
@@ -31,12 +31,15 @@
 		<meta property="og:image:width" content="400">
 		<meta property="og:image:height" content="300">
 		<meta property="og:image:alt" content="A shiny red apple with a bite taken out">
-
-		<!-- CSS -->
-		<link href="<?php bloginfo( 'template_url' ); ?>/css/mobile.css" rel="stylesheet" media="all and (max-width: 600px)">
-        <link href="<?php bloginfo( 'template_url' ); ?>/css/desktop.css" rel="stylesheet" media="all and (min-width: 600px)">
-		<!-- End CSS -->
-
+		<!-- project styles -->
+		<link rel="stylesheet" media="screen" href="<?php bloginfo('template_url') ?>/css/main.css">
+		<link rel="stylesheet" media="all and (min-width: 901px)" href="<?php bloginfo('template_url') ?>/css/main-desktop.css">
+		<link rel="stylesheet" media="all and (max-width: 900px)" href="<?php bloginfo('template_url') ?>/css/main-mobile.css">
+		<!-- vendor script -->
+		<script src="<?php bloginfo('template_url') ?>/js/vendors/jquery-3.4.1.min.js"></script>
+		<script src="<?php bloginfo('template_url') ?>/js/vendors/owl.carousel.min.js"></script>
+		<script src="<?php bloginfo('template_url') ?>/js/vendors/vue.min.js"></script>
+		<script src="<?php bloginfo('template_url') ?>/js/main.js"></script>
 		<?php wp_head(); ?>
 
 	</head>

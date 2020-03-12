@@ -1,1 +1,323 @@
-// Página de inicio...
+
+// Home Nav
+
+.menu_home
+    position: absolute
+    top: 0
+    left: 0
+    right: 0
+    z-index: 100
+    display: flex
+    flex-direction: column
+    justify-content: center
+    padding: 15px 0px
+    .menu_lang
+        display: flex
+        justify-content: flex-end
+        align-items: center
+        margin-right: 50px
+        .lang_item
+            margin-right: 5px
+            color: white
+    .menu_body
+        display: flex
+        justify-content: space-between
+        align-items: center
+        padding: 0px 20px
+        .menu_list
+            display: flex
+            .menu_item
+                margin-right: 30px
+                color: white
+                ul
+                    display: none
+                    position: absolute
+                    list-style: none
+                &:hover
+                    ul
+                        display: block
+        a
+            img
+                width: 150px
+
+.menu_container
+    min-width: 1100px !important
+    margin: 0 auto
+// Home servicios
+.home_servicios
+    background-color: $ligthGrey
+    padding-top: 5rem
+    padding-bottom: 3rem
+    .servicios_title
+        text-align: center
+        color: $blueColor
+        @include main-title
+    .servicios_icons
+        margin-top: 5rem
+        display: flex
+        justify-content: space-around
+        align-items: center
+        .servicios_icon
+            transition: transform .3s ease
+            &:hover
+                transform: scale(1.5)
+        .servicios_item
+            display: flex
+            flex-direction: column
+            align-items: center
+    .servicios_name
+        @include light-text
+        font-size: 1.2rem
+        color: $blueColor
+        margin-top: .8rem
+
+.home_hr
+    z-index: 10
+    border: 3px solid $blueColor
+
+// Home sectores
+.home_sectores
+    background-color: $ligthGrey
+    padding-top: 5rem
+    padding-bottom: 5rem
+    .sectores_grid
+        padding-top: 5rem
+        display: grid
+        grid-template-columns: 1fr 1fr 1fr
+        background-position: center
+        background-size: cover
+        .grid-item
+            height: 300px
+            border: 1px solid white
+            background: rgba($blueColor, .30)
+            display: flex
+            flex-direction: column
+            align-items: center
+            justify-content: center
+            transition: all .3s ease-in-out 
+            &:hover
+                background: $blueColor
+            .sectores_name
+                color: $white
+                @include small-title
+                margin-top: .7rem
+// Home productos
+.home_productos
+    padding-bottom: 3rem
+    &__bg
+        position: absolute
+        background-color: $ligthGrey
+        top: 1
+        left: 0
+        right: 0
+        height: calc(520px + 4.5rem + 4rem)
+        z-index: -1
+    .productos_img
+        margin-top: 3rem
+        width: 100%
+        height: 650px
+        background-position: center
+        background-size: cover
+        display: flex
+        justify-content: center
+        align-items: flex-end
+        .productos_names
+            width: 100%
+            margin-bottom: 100px
+            .productos_items
+                display: flex
+                justify-content: space-between
+                align-items: center
+                .productos_item
+                    width: 100%
+                    text-align: center
+                    background: rgba(black, 0.30)
+                    border: 1px solid white
+                    border-left: 0
+                    padding: 50px 0px
+                    color: white
+                    @include bold-text
+                    font-size: 1.15rem
+                    transition: all .3s ease-in-out 
+                    &:hover
+                        background: $blueColor
+                .productos_item:last-child
+                    border-right: 0
+                    
+
+.about_home
+    background-color: $blueColor
+    padding-top: 2rem
+    max-height: 220px
+    .about_container
+        display: flex
+        .about_quienes
+            width: 65%
+            color: $white
+            text-align: justify
+            padding: 30px
+            .quienes_title
+                @include medium-title
+                margin-bottom: 20px
+                color: $white
+            .quienes_content
+                @include main-text
+                color: $white
+                padding-right: 2rem
+        .about_que
+            position: relative
+            z-index: 1
+            width: 35%
+            background: $ligthGrey
+            padding: 30px
+            margin-top: 3.5rem
+            .que_title
+                @include medium-title
+                color: $darkGrey
+                margin-bottom: 1rem
+            .que_content
+                color: $darkGrey
+                padding-right: 2.5rem
+.about
+    &__a
+        width: 100%
+        display: block
+        position: relative
+        &:hover
+            opacity: 1
+    &__gradient
+        position: absolute
+        top: 0
+        left: 0
+        right: -1px
+        height: 600px
+        opacity: 0
+        transition: all .3s ease-in-out
+        background-image: linear-gradient(45deg,rgba(79,104,255,0.5),rgba(117,19,93,0.5))
+        &:hover
+            opacity: 1
+    &__img
+        display: flex
+        flex-direction: column
+        width: 100%
+        height: 600px
+        background-size: cover
+        background-position: center
+        justify-content: center
+        align-items: center
+        &:hover
+            opacity: 1              
+        p
+            @include medium-title
+            color: $white
+            width: 550px
+            text-align: center
+            line-height: 2.2rem
+            z-index: 100
+    &__img_subtitle
+        margin-top: 3rem
+
+
+.actualidad_home
+    padding-top: 5rem
+    padding-bottom: 2rem
+    background-color: $ligthGrey
+    .header_actualidad
+        display: flex
+        flex-direction: column
+        align-items: center      
+    .last_posts
+        display: flex
+        justify-content: space-between
+        align-items: flex-start
+        padding-top: 4rem
+        .last_post_item
+            padding: 25px
+            display: flex
+            flex-direction: column
+            align-items: center
+            .last_post_thumbnail
+                img
+                    width: 100%
+                    height: auto
+            .last_post_data
+                background: white
+                width: 75%
+                padding-left: 1.5rem
+                padding-top: 2rem
+                padding-bottom: 1.5rem
+                margin-top: -30px
+                color: $darkGrey
+                height: 145px
+                transition: all .3s ease-in-out 
+                .last_post_title
+                    padding-right: 2rem
+                    @include small-title
+                    color: $darkGrey
+                .last_post_date
+                    margin-bottom: 10px
+                    margin-top: 10px
+                .last_post_excerpt
+                    padding-right: 2rem
+                &:hover
+                    background-color: $blueColor
+                    color: $white
+                    a
+                        color: $white
+
+.contacto_home
+    padding: 4.5rem 0
+    .container
+        display: flex
+        justify-content: space-between
+        padding-right: 3rem
+        .contacto_info
+            width: 25%
+            text-align: right
+            h2
+                color: $blueColor
+                line-height: 30px
+                margin-bottom: 30px
+        .contacto_home_title
+            padding-left: 2rem
+            @include medium-title
+        .contacto_home_subtitle
+            padding-left: 3rem
+        .contacto_home_form
+            width: 65%
+            .contacto_hr
+                background-color: $blueColor
+                height: 1px
+                margin-bottom: 2rem
+            .contact_fomr_inpusts
+                display: flex
+                justify-content: space-between
+                input
+                    margin-top: 0.5rem
+                    width: 85%
+                    height: 35px
+                    border: 1.5px solid rgba($darkGrey, 0.5)
+                    border-radius: 2px
+                    &:focus
+                        outline: none
+                        background-color: $ligthGrey
+                    &:hover
+                        background-color: $ligthGrey    
+            .contact_fomr_area
+                margin-top: 0.5rem
+                width: 100%
+                border: 1.5px solid rgba($darkGrey, 0.5)
+                border-radius: 2px
+                &:focus
+                    outline: none
+                    background-color: $ligthGrey
+            .contact_form_send
+                margin-top: 1rem
+            .wpcf7-list-item-label
+                font-size: 0.7rem
+            .send-btn
+                @include main-text
+                margin-top: 1rem
+                padding: 0.7rem 2.5rem
+            .wpcf7-list-item
+                margin: 10px 0px

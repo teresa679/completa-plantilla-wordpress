@@ -1,0 +1,246 @@
+body
+    @include main-text
+    color: $darkGrey
+
+button, 
+a
+    cursor: pointer
+
+.icon
+    font-family: 'comet' !important
+.container
+    max-width: 1150px
+    margin: 0 auto
+
+.container-p
+    max-width: 1150px
+    margin: 0 auto
+    padding: 0 2rem
+
+
+
+.main-btn
+    font-size: 14pt
+    background: none
+    border: 1px solid $blueColor
+    padding: 5px 10px
+    cursor: pointer
+    transition: .2s all
+    &:focus
+        outline: none
+    &:hover
+        background: $blueColor
+        color: white
+
+.white-btn
+    font-size: 14pt
+    background: none
+    border: 1px solid white
+    padding: 5px 10px
+    cursor: pointer
+    transition: .2s all
+    color: white
+    &:focus
+        outline: none
+    &:hover
+        border: 1px solid $blueColor
+        background: $blueColor
+
+.send-btn
+    border: none
+    font-size: 14pt
+    background: none
+    padding: 5px 10px
+    cursor: pointer
+    transition: .2s all
+    background: $blueColor
+    color: white
+    &:focus
+        outline: none
+    &:hover
+        background: $darkGrey
+
+.container
+    max-width: 1100px !important
+    margin: 0 auto
+
+input
+    font-size: 15pt
+    &:focus
+        outline: none
+
+// header general
+.main_menu
+    top: 0px
+    left: 0px
+    right: 0px
+    z-index: 10
+    background: $white
+    font-size: 1rem
+    transition: all .5 ease-in-out
+    .menu_container
+        max-width: 1200px
+        margin: 0 auto
+        display: flex
+        justify-content: space-between
+        align-items: center
+        padding: 2rem 2rem 2rem
+        .menu_lang
+            order: 2
+            a
+                color: $blueColor
+        .menu_body
+            display: flex
+            justify-content: space-around
+            align-items: center
+            width: 100%
+            img
+                width: 200px
+            .menu_list
+                display: flex
+                justify-content: center
+                align-items: center
+                width: 100%
+                margin-left: 10rem
+                .menu_language
+                    margin-left: 3rem
+                    color: $blueColor
+                    & > ul
+                        display: flex
+                        align-items: center   
+                    & > ul > li > a
+                        color: $blueColor
+                        transition: text-shadow .3s ease-in-out
+                        &:hover
+                            text-shadow: 0 0 .30px #05448E, 0 0 .65px #05448E            
+                    & > ul > li > i
+                        color: $blueColor
+                        transition: text-shadow .3s ease-in-out
+                        &:hover
+                            text-shadow: 0 0 .80px #05448E, 0 0 .80px #05448E            
+                    & > ul > li:nth-child(1)
+                        display: flex
+                        align-items: center
+                        margin-right: initial
+                        &::after
+                            content: ''
+                            display: block
+                            height: 13px
+                            margin-left: .5rem
+                            margin-right: .5rem
+                            border-right: 1px solid $blueColor
+                    & > ul > li:nth-child(2)
+                        margin-right: initial
+                    & > ul > li:nth-child(3)
+                        margin-left: 2rem          
+                .menu_item
+                    color: $blueColor
+                    padding-right: 3rem
+                    transition: text-shadow .3s ease-in-out
+                    &:hover
+                        text-shadow: 0 0 .80px #05448E, 0 0 .80px #05448E 
+                        ul
+                            display: block
+                    ul
+                        text-shadow: initial
+                        display: none
+                        position: absolute
+                        list-style: none
+                        background: white
+                        padding: 1.8rem 2rem 1.2rem 1.6rem
+                        border-bottom: 5px solid $blueColor
+                        li
+                            margin-bottom: 5px
+                            a
+                                display: block
+                                color: $blueColor
+                                &:hover
+                                    text-shadow: 0 0 .80px #05448E, 0 0 .80px #05448E
+// Menu scrolled
+.main_menu-scrolled
+    background-color: $white
+    position: fixed
+    top: -105%
+    left: 0
+    right: 0
+    font-size: 1rem
+    z-index: 500
+    transition: all .5s ease-in-out
+    .menu_container
+        max-width: 1200px
+        margin: 0 auto
+        display: flex
+        justify-content: space-between
+        align-items: center
+        padding: 2rem 2rem 2rem
+        .menu_lang
+            order: 2
+            a
+                color: $blueColor
+        .menu_body
+            display: flex
+            justify-content: space-around
+            align-items: center
+            width: 100%
+            img
+                width: 200px
+            .menu_list
+                display: flex
+                justify-content: center
+                align-items: center
+                width: 100%
+                margin-left: 10rem
+                .menu_language
+                    margin-left: 3rem
+                    color: $blueColor
+                    & > ul
+                        display: flex
+                        align-items: center   
+                    & > ul > li > a
+                        color: $blueColor
+                        transition: text-shadow .3s ease-in-out
+                        &:hover
+                            text-shadow: 0 0 .30px #05448E, 0 0 .65px #05448E            
+                    & > ul > li > i
+                        color: $blueColor
+                        transition: text-shadow .3s ease-in-out
+                        &:hover
+                            text-shadow: 0 0 .80px #05448E, 0 0 .80px #05448E            
+                    & > ul > li:nth-child(1)
+                        display: flex
+                        align-items: center
+                        margin-right: initial
+                        &::after
+                            content: ''
+                            display: block
+                            height: 13px
+                            margin-left: .5rem
+                            margin-right: .5rem
+                            border-right: 1px solid $blueColor
+                    & > ul > li:nth-child(2)
+                        margin-right: initial
+                    & > ul > li:nth-child(3)
+                        margin-left: 2rem          
+                .menu_item
+                    color: $blueColor
+                    padding-right: 3rem
+                    transition: text-shadow .3s ease-in-out
+                    &:hover
+                        text-shadow: 0 0 .80px #05448E, 0 0 .80px #05448E 
+                        ul
+                            display: block
+                    ul
+                        text-shadow: initial
+                        display: none
+                        position: absolute
+                        list-style: none
+                        background: white
+                        padding: 1.8rem 2rem 1.2rem 1.6rem
+                        border-bottom: 5px solid $blueColor
+                        li
+                            margin-bottom: 5px
+                            a
+                                display: block
+                                color: $blueColor
+                                &:hover
+                                    text-shadow: 0 0 .80px #05448E, 0 0 .80px #05448E

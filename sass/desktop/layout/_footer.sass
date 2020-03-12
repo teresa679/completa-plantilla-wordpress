@@ -1,0 +1,108 @@
+.footer
+    background-color: $blueColor
+    padding-top: 3rem
+    padding-bottom: 1rem
+    color: $white
+    @include light-text
+    &__grid
+        display: grid
+        grid-template-columns: repeat(4, 1fr)
+        grid-template-rows: repeat(12, 18px)
+        grid-column-gap: 3rem
+        grid-row-gap: .25rem
+        & > li > a
+            @include light-text
+            color: $white
+            transition: font-weight .3s ease-in-out
+            &:hover
+                opacity: .7
+    &__grid--logo
+        grid-column: 1 / 2
+        grid-row: 1 / 4
+        & > a > img
+            display: inline-block
+            height: 60%
+            width: 60%
+            background-position: center
+            background-size: contain
+            background-repeat: no-repeat
+            background-position-x: 0
+            &:hover
+                opacity: 0.7
+    &__grid--titulo
+        @include bold-text
+        grid-column: 1 / 2
+        grid-row: 4 / 6
+    &__grid--calle
+        grid-column: 1 / 2
+        grid-row: 6 / 7
+    &__grid--numero
+        grid-column: 1 / 2
+        grid-row: 7 / 8
+    &__grid--ciudad
+        grid-column: 1 / 2
+        grid-row: 8 / 9
+    &__grid--mail
+        grid-column: 1 / 2
+        grid-row: 9 / 10
+    &__grid--tel
+        grid-column: 1 / 2 
+        grid-row: 10 / 11
+    &__grid--titulo2
+        @include bold-text
+        grid-column: 2 / 3
+        grid-row: 4 / 6
+    &__grid--aviso-legal
+        grid-column: 2 / 3
+        grid-row: 6 / 7
+    &__grid--politica-de-privacidad
+        grid-column: 2 / 3
+        grid-row: 7 / 8
+    &__grid--titulo3
+        @include bold-text
+        grid-column: 3 / 4
+        grid-row: 4 / 6
+    &__grid--actualidad
+        grid-column: 3 / 4
+        grid-row: 6 / 7
+    &__grid--follow-links
+        margin-top: 1rem
+        grid-column: 3 / 4
+        grid-row: 7 / 8
+        & > a > i
+            font-size: 1.5rem
+            color: $white
+    &__grid--image-ministerio
+        grid-column: 4 / 5
+        grid-row: 2 / 10
+        justify-self: end
+        & > img 
+            height: auto
+            width: 150px
+            object-fit: contain
+    &__linea
+        margin-bottom: 1rem
+        width: 100%
+        background-color: $ligthGrey
+        height: 1px 
+    &__grid--idiomas
+        display: flex
+        & > li:first-child
+            display: flex
+            &::after
+                content: ''
+                display: block
+                height: 12px
+                margin-left: .5rem
+                margin-right: .5rem
+                border-right: 1px solid $white
+                margin-top: .2rem
+            & > ul > li:last-child
+                margin-right: initial
+        & > li > a
+            color: $white
+            @include light-text
+            transition: font-weight .3s ease-in-out
+            &:hover
+                opacity: .7
+       
